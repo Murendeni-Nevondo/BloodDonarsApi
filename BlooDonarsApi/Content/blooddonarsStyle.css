@@ -1,0 +1,9 @@
+﻿body {
+	background-image: url('pics/background.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+#nav{
+	background-color:red;
+}
