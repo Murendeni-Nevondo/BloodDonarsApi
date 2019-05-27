@@ -1,4 +1,5 @@
-﻿using System.Security.Claims;
+﻿using System.Data.Entity;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
@@ -29,5 +30,9 @@ namespace BlooDonarsApi.Models
         {
             return new ApplicationDbContext();
         }
+
+        // Add Model Classes to create database tables
+
+        public DbSet<BloodUser> BloodUsers { get; set; }
     }
 }
